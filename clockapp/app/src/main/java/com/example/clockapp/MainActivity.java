@@ -15,7 +15,6 @@ import  android.widget.Button;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-
     private Calendar selectedTime;
     private boolean iniflag=false;
     @Override
@@ -51,9 +50,7 @@ public class MainActivity extends AppCompatActivity {
                 handler.postDelayed(this, 1000); // Check every second
             }
         }, 1000);
-
     }
-
     private void checkTime(){
         TextView tv=findViewById(R.id.textView2);
         if(selectedTime!=null && iniflag) {
